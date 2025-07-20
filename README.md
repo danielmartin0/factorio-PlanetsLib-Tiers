@@ -8,4 +8,8 @@ Tiers have no functionality by themselves, but are a rough indicator where the p
 
 This mod is separate to PlanetsLib so that players can choose to update PlanetsLib without changing the tiers of planets on their save.
 
-See [here](https://github.com/danielmartin0/factorio-PlanetsLib-Tiers/blob/main/tiers.lua) for the built-in tier list. Players are encouraged to submit edits to keep this list up-to-date.
+## Documentation
+
+The built-in tier list is [defined here](https://github.com/danielmartin0/factorio-PlanetsLib-Tiers/blob/main/tiers.lua), though other mods are able to overwrite these values. Players are encouraged to submit edits to keep the built-in list up-to-date.
+
+You can access the tier values of a planet or space location with `local tier = data.raw["mod-data"]["PlanetsLib-tierlist"].data[type][name] or data.raw["mod-data"]["PlanetsLib-tierlist"].data.default`.
