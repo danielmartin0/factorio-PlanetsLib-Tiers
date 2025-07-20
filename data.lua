@@ -1,8 +1,4 @@
-local Public = {}
-
--- PlanetsLib tiers are a simple way for modded planets to define where they typically fit in a Space Age playthrough. It has no meaning by itself, but other mods can be sensitive to them.
-
-Public.fallback_tier = 3.33333 -- Vertically south of the star in Organized Solar System
+local fallback_tier = 3.33333 -- In Organized Solar System, vertically south of the star
 
 --== Tier meanings guide ==--
 -- Tier 0:  Pre-Nauvis
@@ -14,7 +10,7 @@ Public.fallback_tier = 3.33333 -- Vertically south of the star in Organized Sola
 -- Tier 6:  Post-endgame planets and other oddities
 -- Tier -1: Indicates the planet sits outside of this system in some way.
 
-Public.vanilla_tiers = {
+local vanilla_tiers = {
 	planet = {
 		nauvis = 1,
 		vulcanus = 1.8,
@@ -28,12 +24,13 @@ Public.vanilla_tiers = {
 	},
 }
 
-Public.modded_tiers = {
+local modded_tiers = {
 	planet = {
 		akularis = 0.5,
 		gerkizia = 0.5,
 		quadromire = 0.5,
 		mickora = 1,
+		["erimos-prime"] = 1.22,
 		vicrox = 1.4,
 		froodara = 1.8,
 		tchekor = 2,
@@ -60,24 +57,35 @@ Public.modded_tiers = {
 		["slp-solar-system-sun"] = 0.2,
 		["slp-solar-system-sun2"] = 0.2,
 		["calidus-senestella-gate-calidus"] = 4.0,
-		secretas = 5.65,
+		secretas = 5.6,
 	},
 }
 
-Public.get_planet_tier = function(planet_name)
-	local tier = Public.vanilla_tiers.planet[planet_name]
-		or Public.modded_tiers.planet[planet_name]
-		or Public.fallback_tier
+data:extend({
+	{
+		type = "mod-data",
+		name = "PlanetsLib-tierlist",
+		data_type = "tierlist",
+		data = {
+			default = fallback_tier,
+			planet = {},
+			["space-location"] = {},
+		},
+	},
+})
 
-	return tier
+for planet_name, tier in pairs(vanilla_tiers.planet) do
+	data.raw["mod-data"]["PlanetsLib-tierlist"].data.planet[planet_name] = tier
 end
 
-Public.get_space_location_tier = function(space_location_name)
-	local tier = Public.vanilla_tiers["space-location"][space_location_name]
-		or Public.modded_tiers["space-location"][space_location_name]
-		or Public.fallback_tier
-
-	return tier
+for planet_name, tier in pairs(modded_tiers.planet) do
+	data.raw["mod-data"]["PlanetsLib-tierlist"].data.planet[planet_name] = tier
 end
 
-return Public
+for space_location_name, tier in pairs(vanilla_tiers["space-location"]) do
+	data.raw["mod-data"]["PlanetsLib-tierlist"].data["space-location"][space_location_name] = tier
+end
+
+for space_location_name, tier in pairs(modded_tiers["space-location"]) do
+	data.raw["mod-data"]["PlanetsLib-tierlist"].data["space-location"][space_location_name] = tier
+end

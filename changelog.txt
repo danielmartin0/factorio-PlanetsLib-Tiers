@@ -1,5 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-02-15
+  Features:
+    - Added thumbnail.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2025-02-15
   Features:
     - Initial release.
+    - Secretas moved slightly closer to Frozeta.
+    - Added tier value for Erimos Prime.
