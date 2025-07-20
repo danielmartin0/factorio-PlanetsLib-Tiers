@@ -1,0 +1,1 @@
+See [here](https://github.com/danielmartin0/factorio-PlanetsLib-Tiers/blob/main/tiers.lua) for the tier list.
