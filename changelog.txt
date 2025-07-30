@@ -2,6 +2,7 @@
 Version: 1.0.4
 Date: ????
   Changes:
+    - Removed tier for skewer_shattered_planet because it was agreed the location can be soon fixed with a PlanetsLib orbit hierarchy instead.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2025-07-30

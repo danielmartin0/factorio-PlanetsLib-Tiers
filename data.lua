@@ -47,7 +47,6 @@ local modded_tiers = {
 		cubium = 4.1,
 		rubia = 4.5,
 		paracelsin = 4.8,
-		skewer_shattered_planet = 5,
 		hexalith = 5.1,
 		maraxsis = 5.3,
 		frozeta = 5.5,
