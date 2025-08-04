@@ -34,6 +34,7 @@ local modded_tiers = {
 		vicrox = 1.4,
 		froodara = 1.8,
 		tchekor = 2,
+		arig = 2,
 		jahtra = 2.2,
 		nekohaven = 2.5,
 		zzhora = 2.5,
