@@ -1,7 +1,7 @@
 {
     "name": "PlanetsLibTiers",
     "author": "thesixthroc",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "title": "PlanetsLib: Tiers",
     "description": "This companion mod for PlanetsLib assigns 'tier values' to planets — rough indicators of where the planet fits in a vanilla-style game of Space Age — for other mods that wish to use this information.\n\nPlanetsLib: Tiers is separate to PlanetsLib so that it can be updated independently. You can hold the version of this mod fixed to avoid tier values changing (unless another external mod changes them).",
     "contact": "Discord: thesixthroc",
