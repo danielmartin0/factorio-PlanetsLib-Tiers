@@ -3,8 +3,8 @@ local fallback_tier = 3.33333 -- In Organized Solar System, vertically south of 
 --== Tier meanings guide ==--
 -- Tier 0:  Pre-Nauvis
 -- Tier 1:  Nauvis & friends
--- Tier 2:  First steps from Nauvis
--- Tier 3:  Intermediate planets that may reward preparation
+-- Tier 2:  Solar system footholds after Nauvis
+-- Tier 3:  Intermediate planets
 -- Tier 4:  More involved planets that may depend on earlier progress
 -- Tier 5:  Aquilo and the vanilla endgame
 -- Tier 6:  Post-endgame planets and other oddities
@@ -45,10 +45,10 @@ local modded_tiers = {
 		shchierbin = 3,
 		ithurice = 3.3,
 		corrundum = 3.3,
+		moshine = 3.6,
 		castra = 4,
 		tapatrion = 4,
 		tenebris = 4,
-		moshine = 4.1,
 		cubium = 4.1,
 		rubia = 4.5,
 		paracelsin = 4.8,
@@ -56,6 +56,7 @@ local modded_tiers = {
 		vesta = 5.2,
 		maraxsis = 5.3,
 		frozeta = 5.5,
+		panglia = 5.7,
 		omnia = 6,
 		naufulglebunusilo = 6,
 		arrakis = 6,
