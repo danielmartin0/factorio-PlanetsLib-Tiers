@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
-Date: ????
+Date: 2026-06-06
   Changes:
     - Hidden the 1.2.0 mod setting to reduce potential queries to other authors since the mod is not currently being maintained.
 ---------------------------------------------------------------------------------------------------
