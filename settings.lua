@@ -4,5 +4,6 @@ data:extend({
 		setting_type = "startup",
 		name = "PlanetsLibTiers-show-tier-tooltip",
 		default_value = false,
+		hidden = true,
 	},
 })
